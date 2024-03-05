@@ -4,8 +4,6 @@
 Languini is trained on thousands of images of spectrograms of real-world speakers. It uses siamese twins with triplets loss function to train a model to recognise similar sounding sounds, by comparing their spectrograms.
 
 
-
-
 ***
 ### How it works
 The basic idea is very simple: 
@@ -14,7 +12,8 @@ The basic idea is very simple:
 2. The analogue signal is converted to a Mel Spectrogram using a fast fourier transform (FFT) (input, for the model)
 3. Spectrogram of the recording is compared with the spectrogram of the native speaker (anchor, for the model)
 4. The model embedes both images (as TensorFlow vectors)and compares them through cosine similarity
-5. The resulting score is weighted against previous attemps to show progress
+5. The resulting score is weighted against previous attemps to show progress.
+6. Display the scores
 
 <p align="center">
   <img src="https://github.com/Matthias-403/Languini_AI/blob/master/GH%20diagram(3).png" />
